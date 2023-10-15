@@ -1,5 +1,5 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
-import { InitProjectResponse, ProjectResponse } from './types'
+import { InitProjectResponse, ProjectResponse } from '../types'
 
 const baseUrl = process.env.REACT_APP_ABI_BASE_URL
 

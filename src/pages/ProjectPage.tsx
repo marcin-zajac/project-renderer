@@ -1,6 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import { useGetProjectByIdQuery } from '../services/project'
+import SvgRenderer from '../components/SvgRenderer/SvgRenderer'
 
 const ProjectPage = () => {
   const { id } = useParams()
@@ -11,7 +12,17 @@ const ProjectPage = () => {
   return (
     <>
       <div>Project {id}</div>
-      {data && JSON.stringify(data)}
+      <div
+        style={{
+          display: 'flex',
+          flex: '1 1',
+          background: '#d3d3d3',
+          alignItems: 'stretch',
+          width: '100%',
+        }}
+      >
+        {data && <SvgRenderer project={data.project} />}
+      </div>
     </>
   )
 }
