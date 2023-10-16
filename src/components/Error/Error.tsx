@@ -9,7 +9,12 @@ interface ErrorProps {
 
 const Error = ({ error }: ErrorProps) => {
   const { t } = useTranslation()
-  const errMsg = (error as { message: string }).message
+  console.log({ error })
+
+  const errMsg =
+    'message' in error
+      ? String(error.message)
+      : (error as { data: { message: string } })?.data?.message
 
   return (
     <article className="message column is-half is-offset-one-quarter px-0">
