@@ -1,6 +1,6 @@
-import React from 'react'
-import { Project, Item } from '../../types'
 import * as d3 from 'd3'
+import React from 'react'
+import { Project } from '../../types'
 import { drawBackground, drawBoundingBox, drawEllipse, drawLabel, drawRectangle } from './helpers'
 
 interface Props {
@@ -28,7 +28,11 @@ const SvgRenderer: React.FC<Props> = ({ project }) => {
   }, [project])
 
   return (
-    <svg width="100%" height="100%" style={{ flex: '0 1 100%', width: '100vw', height: '100vh' }}>
+    <svg
+      width="100%"
+      height="100%"
+      style={{ flex: '0 1 100%', width: '100vw', height: 'calc(100vh - 255px' }}
+    >
       <svg ref={svgRef} viewBox={`0 0 ${project.width} ${project.height}`} />
     </svg>
   )

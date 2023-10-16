@@ -1,6 +1,15 @@
 {
-    "translation_works": "Tłumaczenia działają 🚀",
-    "routes": {
-        "project": "projekt"
-    }
+    "appSubtitle": "Renderer projektów SVG pobranych z API",
+    "appTitle": "SVG Renderer",
+    "error": "Błąd",
+    "find_other_project_or_get_random": "Znajdź inny projekt lub zostaw puste",
+    "go_to_main_page": "Strona główna",
+    "invalid_initial_project_data": "Nieprawidłowe dane inicjalizacyjne",
+    "invalid_project_data": "Nieprawidłowe dane projektu",
+    "or_view_random": "lub zobacz losowo wybrany",
+    "project_id": "ID projektu",
+    "projectIdPlaceholder": "Przykład: clnsqyjh4002308l44zj90jsd-1114062729896567",
+    "search": "Szukaj",
+    "type": "Wprowadź",
+    "view": "Zobacz projekt"
 }

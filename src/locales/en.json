@@ -1,0 +1,13 @@
+{
+    "appTitle": "SVG Renderer",
+    "appSubtitle": "Render SVG projects fetched from API",
+    "find_other_project_or_get_random": "Find other project or leave blank to get random",
+    "invalid_initial_project_data": "Invalid initial data",
+    "invalid_project_data": "Invalid project data",
+    "or_view_random": "or view a randomly selected",
+    "projectIdPlaceholder": "Example: clnsqyjh4002308l44zj90jsd-1114062729896567",
+    "project_id": "Project ID",
+    "search": "Search",
+    "type": "Enter",
+    "view": "View project "
+}
