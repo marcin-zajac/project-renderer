@@ -87,6 +87,6 @@ const getContrastColor = (hexColor: string): string => {
   const g: number = parseInt(hexColor.substring(3, 5), 16)
   const b: number = parseInt(hexColor.substring(5, 7), 16)
   const brightness: number = (r * 299 + g * 587 + b * 114) / 1000
-  return brightness > 128 ? '#FFFFFF' : '#000000'
+  return brightness > 128 ? '#000000' : '#FFFFFF'
 }
 export { drawRectangle, drawEllipse, drawLabel, drawBoundingBox, drawBackground, getContrastColor }
